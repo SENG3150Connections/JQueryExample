@@ -1,8 +1,44 @@
+body {
+	background-image: url("images/aerial-banner.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+main {
+	width:1080px;
+	margin:0 auto;
+}
 #tabs {
-  width:880px;
+  width:720px;
   min-height:650px;
   float:left;
 }
 #tabs div {
   min-height: 650px;
 }
+
+/* Icons
+----------------------------------*/
+.ui-icon {
+	/*display: inline-block;
+	vertical-align: middle;
+	margin-top: -.25em;
+	position: relative;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	*/
+}
+
+
+#gallery, #gallery2, #gallery3, #gallery4 { float: left; width: 680px; min-height: 700px; }
+.gallery.custom-state-active { background: #eee; }
+.gallery li { float: left; width: 200px; height: 200px; padding: 0.4em; margin: 0 0.7em 0.7em 0; text-align: center; }
+.gallery li h5 { margin: 0 0 0.4em; cursor: move; }
+.gallery li a { float: right; visibility: hidden;}
+.gallery li img { width: 100%; cursor: move; }
+
+#packageInformation { float: left; width: 250px; height: 700px; padding: 0.4em; overflow-y: scroll;}
+#packageInformation h4 { line-height: 16px; margin: 0 0 0.4em; }
+#packageInformation h4 .ui-icon { float: left; }
+#packageInformation a {visibility: hidden;}

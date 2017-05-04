@@ -64,7 +64,7 @@ $gallery.droppable({
 });
 
 // Image deletion function
-var recycle_icon = "<a href='link/to/recycle/script/when/we/have/js/off' title='Remove this offer' class='ui-icon ui-icon-refresh'>Remove offer</a>";
+var recycle_icon = "<a href='link/to/recycle/script/when/we/have/js/off' title='Remove this offer' class='ui-icon ui-icon-refresh'></a>";
 function addOffer( $item ) {
   $item.fadeOut(function() {
     var $list = $( "ul", $packageInformation ).length ?
@@ -74,7 +74,7 @@ function addOffer( $item ) {
     $item.find( "a.ui-icon-packageInformation" ).remove();
     $item.append( recycle_icon ).appendTo( $list ).fadeIn(function() {
       $item
-        .animate({ height: "65px" })
+        .animate({ height: "75px" })
         .find( "img" )
           .animate({ height: "40px" });
     });
@@ -82,7 +82,7 @@ function addOffer( $item ) {
 }
 
 // Image recycle function
-var packageInformation_icon = "<a href='link/to/packageInformation/script/when/we/have/js/off' title='Add this offer' class='ui-icon ui-icon-packageInformation'>Add offer</a>";
+var packageInformation_icon = "<a href='link/to/packageInformation/script/when/we/have/js/off' title='Add this offer' class='ui-icon ui-icon-packageInformation'></a>";
 function removeOffer( $item ) {
   $item.fadeOut(function() {
     $item
